@@ -2,6 +2,9 @@
 
 set -e
 
-sudo /usr/share/lider-server/bin/start
-/usr/share/lider-server/bin/client -r 50 'wrapper:install'
-sudo /usr/share/lider-server/bin/stop
+if [ -d /usr/share/lider-server-old ]; then
+
+    cp -rf /usr/share/lider-server-old/etc/tr.org.liderahenk.cfg  /usr/share/lider-server/etc/
+    cp -rf /usr/share/lider-server-old/etc/tr.org.liderahenk.datasource.cfg  /usr/share/lider-server/etc/
+fi
+/etc/init.d/lider start
