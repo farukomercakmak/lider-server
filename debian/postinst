@@ -2,9 +2,11 @@
 
 set -e
 
-if [ -d /usr/share/lider-server-old ]; then
+if [ ! -d /usr/share/lider-server ]; then
 
-    cp -rf /usr/share/lider-server-old/etc/tr.org.liderahenk.cfg  /usr/share/lider-server/etc/
-    cp -rf /usr/share/lider-server-old/etc/tr.org.liderahenk.datasource.cfg  /usr/share/lider-server/etc/
+    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg  /usr/share/lider-server/etc/
+    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasource.cfg  /usr/share/lider-server/etc/
+
 fi
+
 /etc/init.d/lider start
