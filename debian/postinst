@@ -9,4 +9,3 @@ if [ ! -d /usr/share/lider-server ]; then
 
 fi
 
-/etc/init.d/lider start
