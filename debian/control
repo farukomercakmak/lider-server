@@ -8,3 +8,4 @@ Depends: default-jre, nmap
 Architecture: all
 Description: Lider is the basic component of Lider Ahenk central management system
  Lider LiderAhenk Acik Kaynak Merkezi Yonetim Sistemi temel bilesenidir.
+Version:1.1
