@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: lider-deb
-Source: https://github.com/Pardus-LiderAhenk/lider-deb
+Upstream-Name: lider-server
+Source: https://github.com/Pardus-LiderAhenk/lider-server
 
 Files: *
 Copyright: 2018 Ömer Çakmak <farukomercakmak@gmail.com>
