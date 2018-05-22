@@ -3,9 +3,10 @@ Section: utils
 Priority: optional
 Build-Depends: debhelper (>= 9)
 Maintainer: Ömer Çakmak <farukomercakmak@gmail.com>
+
 Package: lider-server
+Version:1.1
 Depends: default-jre, nmap
-Architecture: all
+Architecture: any
 Description: Lider is the basic component of Lider Ahenk central management system
  Lider LiderAhenk Acik Kaynak Merkezi Yonetim Sistemi temel bilesenidir.
-Version:1.1
