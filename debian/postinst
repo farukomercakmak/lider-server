@@ -2,9 +2,10 @@
 
 set -e
 
-if [ ! -d /usr/share/lider-server ]; then
+if [ -d /tmp/lider-server ]; then
 
-    mkdir -p /usr/share/lider-server
-    cp -rf /tmp/lider-server/* /usr/share/lider-server
+    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.example.registration.cfg /usr/share/lider-server/etc/
+    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg /usr/share/lider-server/etc/
+    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasourceq.cfg /usr/share/lider-server/etc/
 fi
 

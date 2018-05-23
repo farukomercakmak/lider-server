@@ -5,7 +5,7 @@ set -e
 if [ -d /usr/share/lider-server ] && [ "$1" = "purge" ];then
 
     rm -rf /usr/share/lider-server
-    rm /etc/systemd/system/lider.service
-    rm /etc/init.d/lider
+#    rm /etc/systemd/system/lider.service
+#    rm /etc/init.d/lider
 
 fi
