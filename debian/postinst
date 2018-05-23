@@ -2,24 +2,5 @@
 
 set -e
 
-if [ ! -f /usr/share/lider-server/etc/tr.org.liderahenk.cfg ]; then
-
-    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg  /usr/share/lider-server/etc/
-
-fi
-
-if [ ! -f /usr/share/lider-server/etc/tr.org.liderahenk.datasource.cfg ]; then
-
-    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasource.cfg  /usr/share/lider-server/etc/
-
-fi
-
-if [ ! -f /usr/share/lider-server/etc/tr.org.liderahenk.example.registration.cfg ]; then
-
-    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.example.registration.cfg  /usr/share/lider-server/etc/
-
-fi
-
-
 systemctl enable lider.service
 systemctl start lider.service
