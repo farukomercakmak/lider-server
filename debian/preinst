@@ -4,10 +4,10 @@ set -e
 
 if [ -d /usr/share/lider-server ]; then
 
-    /etc/init.d/lider stop
+    systemctl stop lider.service
     cp -rf /usr/share/lider-server /tmp/lider-server
 
 else
-
+	
     mkdir -p /usr/share/lider-server
 fi
