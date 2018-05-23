@@ -2,5 +2,11 @@
 
 set -e
 
-systemctl enable lider.service
-systemctl start lider.service
+if [ ! -d /usr/share/lider-server ]; then
+
+    mkdir -p /usr/share/lider-server
+    cp -rf /tmp/lider-server/* /usr/share/lider-server
+fi
+
+systemctl enable ahenk
+systemctl start ahenk

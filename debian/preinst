@@ -4,9 +4,9 @@ set -e
 
 if [ -d /usr/share/lider-server ]; then
 
-    cp -rf /usr/share/lider-server /tmp/lider-server
+    cp -rf /usr/share/lider-server /tmp
 
 else
-	
+
     mkdir -p /usr/share/lider-server
 fi
