@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+#if [ -d /tmp/lider-server ]; then
+
+#    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.example.registration.cfg /usr/share/lider-server/etc/
+#    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg /usr/share/lider-server/etc/
+#    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasource.cfg /usr/share/lider-server/etc/
+systemctl start lider.service
+#fi
+
