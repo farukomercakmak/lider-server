@@ -8,4 +8,3 @@ if [ ! -d /usr/share/lider-server ]; then
     cp -rf /tmp/lider-server/* /usr/share/lider-server
 fi
 
-/etc/init.d/lider start
