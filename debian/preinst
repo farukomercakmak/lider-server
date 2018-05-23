@@ -4,7 +4,6 @@ set -e
 
 if [ -d /usr/share/lider-server ]; then
 
-    systemctl stop lider.service
     cp -rf /usr/share/lider-server /tmp/lider-server
 
 else
