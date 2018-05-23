@@ -8,4 +8,4 @@ set -e
 #    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg /usr/share/lider-server/etc/
 #    cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasource.cfg /usr/share/lider-server/etc/
 #fi
-/bin/bash /usr/share/lider-server/bin/karaf server
+/bin/bash /usr/share/lider-server/bin/karaf server &
