@@ -1,0 +1,2 @@
+/etc/init.d/lider
+/etc/systemd/system/lider.service

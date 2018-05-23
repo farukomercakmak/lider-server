@@ -1,0 +1,10 @@
+Package: lider-server
+Version: 1.2
+Architecture: amd64
+Maintainer: Ömer Çakmak <farukomercakmak@gmail.com>
+Installed-Size: 90207
+Depends: default-jre, nmap
+Section: utils
+Priority: optional
+Description: Lider is the basic component of Lider Ahenk central management system
+ Lider LiderAhenk Acik Kaynak Merkezi Yonetim Sistemi temel bilesenidir.
