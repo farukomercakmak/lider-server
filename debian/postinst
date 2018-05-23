@@ -6,7 +6,8 @@ if [ ! -d /usr/share/lider-server ]; then
 
     cp -rf /tmp/lider-server/etc/tr.org.liderahenk.cfg  /usr/share/lider-server/etc/
     cp -rf /tmp/lider-server/etc/tr.org.liderahenk.datasource.cfg  /usr/share/lider-server/etc/
-    /etc/init.d/lider start
 
 fi
+
+/etc/init.d/lider start
 
