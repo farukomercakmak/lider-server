@@ -8,6 +8,5 @@ if [ ! -d /usr/share/lider-server ]; then
     cp -rf /tmp/lider-server/* /usr/share/lider-server
 fi
 
-systemctl enable lider.service
 systemctl start  lider.service
 
