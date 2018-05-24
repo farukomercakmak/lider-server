@@ -6,6 +6,5 @@ if [ -d /usr/share/lider-server ] && [ "$1" = "purge" ];then
 
 	systemctl stop lider.service
 	rm -rf /usr/share/lider-server
-#    rm /etc/systemd/system/lider.service
-#    rm /etc/init.d/lider
+	systemctl daemon-reload
 fi
