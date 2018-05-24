@@ -1,6 +1,6 @@
 #Lider-Server
 
-##Paketin İnşa Edilmesi##
+##Paketin İnşa Edilmesi
 
 LiderAhenk Projesi Lider bileşeninin debian paketi haline getirilerek Pardus sunucu ve Pardus 17 üzerine kurulumunu kolaylaştırmak amaçlanmıştır. Bu sayede birtakım işler paket kurulumu esnasında otomatik yapılarak kullanıcının daha az zaman harcaması sağlanmaktadır. 
 
@@ -21,11 +21,11 @@ git-buildpackage bağımlılıkları kurulur.
 
 Yukarıdaki adımdan sonra **/tmp/build-area/** dizini altına **lider-console_1.1_all.deb** debian paketi oluşmaktadır.
 
-	sudo dpkg -i lider-console_1.1_all.deb
+	sudo dpkg -i lider-server_1.1_amd64.deb
 
 komutu ile sisteme kurulur. Uygulamalar menüsünden veya uçbirimden **"lider-console"** olarak aratılarak çalıştırılabilir.
 
-##LiderAhenk Deposunun Sisteme Eklenmesi##
+##LiderAhenk Deposunun Sisteme Eklenmesi
 
 LiderAhenk bileşenleri ve eklentileri "repo.liderahenk.org" adresinde sunulmaktadır. Pardus bilgisayarlarda bu adres tanımlanarak tüm eklentiler depodan yüklenebilmektedir. Bu deponun sisteminize tanımlanması için uçbirim(konsol)da;
 
@@ -49,14 +49,22 @@ Daha sonra;
 
 komutu ile güncel paket listesini alınmalıdır. 
 
-##Paketin Depodan Sisteme Yüklenmesi-Kaldırılması##
+##Paketin Depodan Sisteme Yüklenmesi-Kaldırılması
 
 Uçbirimde;
 
-	sudo apt install lider-console -y
+	sudo apt install lider-server -y
 
 komutu ile paket yükleyebilir;
 
-	sudo apt remove lider-console -y
+	sudo apt remove lider-server -y
 
 komutu ile sistemden kaldırılabilir.
+
+##Lider-Server Erişim
+
+Uçbirimde;
+
+	lider-client
+
+komutu ile herhangi bir dizin altından erişilebilir.
